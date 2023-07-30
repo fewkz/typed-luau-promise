@@ -147,5 +147,4 @@ l`\ttry: <T..., A...>(callback: (A...) -> T..., A...) -> Promise1<T...>,`;
 l`}`;
 l`-- stylua: ignore end`;
 l``;
-l`local ReplicatedStorage = game:GetService("ReplicatedStorage")`;
-l`return require(ReplicatedStorage.Modules.Packages.UntypedPromise) :: PromiseLib`;
+l`return require(game:GetService("ReplicatedStorage").Packages.UntypedPromise) :: PromiseLib`;

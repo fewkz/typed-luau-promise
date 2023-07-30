@@ -245,5 +245,4 @@ type PromiseLib = {
 }
 -- stylua: ignore end
 
-local ReplicatedStorage = game:GetService("ReplicatedStorage")
-return require(ReplicatedStorage.Modules.Packages.UntypedPromise) :: PromiseLib
+return require(game:GetService("ReplicatedStorage").Packages.UntypedPromise) :: PromiseLib
