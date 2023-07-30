@@ -36,6 +36,13 @@ To run the generation script, simply do
 
 ## Things you may run into
 
+### Incomplete definition
+
+This wrapper doesn't define every single function in roblox-lua-promise because
+I never got around to it. Adding new ones is relatively straight forward, and
+may be added whenever I run into the need. Feel free to contribute a pull
+request adding any missing definitions.
+
 ### Promise.all
 
 The definition of `Promise.all` requires all of the promises passed in to have
