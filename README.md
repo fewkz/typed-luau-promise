@@ -59,3 +59,19 @@ local a = pA:expect()
 local b = pB:expect()
 local c = pC:expect()
 ```
+
+### Generic variable type
+
+For cases where a variable may need to store a generic promise, you can use the
+`AnyPromise` type. This stores any promise, however you don't get any type info
+about what the promise will return.
+
+```lua
+local p: Promise.AnyPromise
+
+p = Promise.resolve("hello")
+p = Promise.resolve(5)
+p = p:andThen(function(r) -- r is typed as `any`
+    return r
+end)
+```
